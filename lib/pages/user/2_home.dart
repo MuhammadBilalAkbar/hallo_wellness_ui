@@ -227,7 +227,7 @@ class _HomeState extends State<Home> {
               Padding(
                 padding: EdgeInsets.only(left: width * 0.02),
                 child: SizedBox(
-                  height: height * 0.25,
+                  height: height * 0.26,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     separatorBuilder: (BuildContext context, int index) =>
@@ -655,7 +655,7 @@ class _HomeState extends State<Home> {
                 padding: EdgeInsets.symmetric(horizontal: width * 0.05),
                 child: Container(
                   width: double.infinity,
-                  height: height * 0.12,
+                  height: height * 0.13,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
@@ -725,11 +725,7 @@ class _HomeState extends State<Home> {
                     margin: EdgeInsets.symmetric(horizontal: width * 0.02),
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(10),
-                          topRight: Radius.circular(10),
-                          bottomLeft: Radius.circular(10),
-                          bottomRight: Radius.circular(10)),
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.withOpacity(0.5),

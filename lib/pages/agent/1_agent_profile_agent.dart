@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:hallo_wellness_ui/res/assets/image_assets.dart';
 import 'package:hallo_wellness_ui/res/colors/app_colors.dart';
 
-class UserProfile extends StatefulWidget {
-  const UserProfile({super.key});
+class AgentProfileAgent extends StatefulWidget {
+  const AgentProfileAgent({super.key});
 
   @override
-  State<UserProfile> createState() => _UserProfileState();
+  State<AgentProfileAgent> createState() => _AgentProfileAgentState();
 }
 
-class _UserProfileState extends State<UserProfile> {
+class _AgentProfileAgentState extends State<AgentProfileAgent> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -40,7 +40,7 @@ class _UserProfileState extends State<UserProfile> {
                   radius: 35,
                   child: CircleAvatar(
                     radius: 34,
-                    backgroundImage: AssetImage(ImageAssets.userProfile),
+                    backgroundImage: AssetImage(ImageAssets.agentProfile),
                   ),
                 ),
                 Padding(
@@ -49,7 +49,7 @@ class _UserProfileState extends State<UserProfile> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Kanish Garg',
+                        'Mahesh Jain',
                         style: Theme.of(context).textTheme.headlineSmall,
                       ),
                       Row(
@@ -76,7 +76,7 @@ class _UserProfileState extends State<UserProfile> {
             ),
             Container(
               padding: EdgeInsets.only(top: height * 0.02),
-              height: height * 0.25,
+              height: height * 0.4,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -85,18 +85,22 @@ class _UserProfileState extends State<UserProfile> {
                       CircleAvatar(
                         radius: 20,
                         backgroundColor: Color(0XFFEEEEFF),
-                        child: CircleAvatar(
-                          radius: 15,
-                          backgroundImage: AssetImage(
-                            ImageAssets.micIcon,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color(0XFFEEEEFF),
                           ),
-                          backgroundColor: Color(0XFFEEEEFF),
+                          child: Image.asset(
+                            ImageAssets.requestIcon,
+                            height: height * 0.028,
+                            width: width * 0.18,
+                          ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: width * 0.04),
                         child: Text(
-                          'Talk to AI',
+                          'User Requests',
                           style: TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w500,
@@ -112,18 +116,84 @@ class _UserProfileState extends State<UserProfile> {
                       CircleAvatar(
                         radius: 20,
                         backgroundColor: Color(0XFFEEEEFF),
-                        child: CircleAvatar(
-                          radius: 15,
-                          backgroundImage: AssetImage(
-                            ImageAssets.transactionIcon,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color(0XFFEEEEFF),
                           ),
-                          backgroundColor: Color(0XFFEEEEFF),
+                          child: Image.asset(
+                            ImageAssets.sessionIcon,
+                            height: height * 0.03,
+                            width: width * 0.2,
+                          ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: width * 0.04),
                         child: Text(
-                          'Transactions',
+                          'All Sessions',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500,
+                            color: AppColors.primaryAppColor,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Divider(indent: width * 0.13),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 20,
+                        backgroundColor: Color(0XFFEEEEFF),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color(0XFFEEEEFF),
+                          ),
+                          child: Image.asset(
+                            ImageAssets.walletIcon,
+                            height: height * 0.03,
+                            width: width * 0.2,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(left: width * 0.04),
+                        child: Text(
+                          'My Wallet',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500,
+                            color: AppColors.primaryAppColor,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Divider(indent: width * 0.13),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 20,
+                        backgroundColor: Color(0XFFEEEEFF),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color(0XFFEEEEFF),
+                          ),
+                          child: Image.asset(
+                            ImageAssets.payoutIcon,
+                            height: height * 0.03,
+                            width: width * 0.2,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(left: width * 0.04),
+                        child: Text(
+                          'Payouts',
                           style: TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w500,
@@ -168,7 +238,7 @@ class _UserProfileState extends State<UserProfile> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: height * 0.35),
+              padding: EdgeInsets.only(top: height * 0.2),
               child: GestureDetector(
                 onTap: () {},
                 child: Row(

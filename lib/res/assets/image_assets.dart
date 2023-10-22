@@ -1,4 +1,8 @@
 class ImageAssets {
+  ///
+  /// User
+  ///
+
   static const String ellipse = 'assets/images/user/ellipse.png';
 
   static const String userProfile = 'assets/images/user/userProfile.png';
@@ -25,10 +29,21 @@ class ImageAssets {
   static const String curlIcon = 'assets/images/user/curlIcon.png';
 
   static const String videoIcon = 'assets/images/user/videoIcon.png';
-  static const String audioIcon = 'assets/images/user/audioIcon.png';
-  static const String messageIcon = 'assets/images/user/messageIcon.png';
+  static const String voiceIcon = 'assets/images/user/voiceIcon.png';
+  static const String chatIcon = 'assets/images/user/chatIcon.png';
 
   static const String micIcon = 'assets/images/user/micIcon.png';
-  static const String transactionIcon = 'assets/images/user/transactionIcon.png';
+  static const String transactionIcon =
+      'assets/images/user/transactionIcon.png';
   static const String profileIcon = 'assets/images/user/profileIcon.png';
+
+  ///
+  /// Agent
+  ///
+
+  static const String agentProfile = 'assets/images/agent/agentProfile.png';
+  static const String walletIcon = 'assets/images/agent/walletIcon.png';
+  static const String sessionIcon = 'assets/images/agent/sessionIcon.png';
+  static const String requestIcon = 'assets/images/agent/requestIcon.png';
+  static const String payoutIcon = 'assets/images/agent/payoutIcon.png';
 }
