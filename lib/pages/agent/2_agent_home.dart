@@ -409,73 +409,136 @@ class _AgentHomeState extends State<AgentHome> {
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
               ),
-              Container(
-                height: height * 0.5,
-                padding: EdgeInsets.only(top: height * 0.01),
-                child: ListView.separated(
-                  // reverse: true,
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) => Container(
-                    margin: EdgeInsets.symmetric(horizontal: width * 0.02),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: width * 0.04,
-                      vertical: height * 0.0,
-                    ),
-                    height: height * 0.08,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.withOpacity(0.5),
-                          spreadRadius: 0.1,
-                          blurRadius: 5,
-                        ),
-                      ],
-                    ),
-                    child: Row(
-                      children: [
-                        CircleAvatar(
-                          backgroundImage: AssetImage(ImageAssets.userProfile),
-                          // radius: 50,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(expertNames[index]),
-                            DefaultTextStyle(
-                              style: TextStyle(color: Colors.grey),
-                              child: Row(
-                                mainAxisAlignment:
-                                MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Text(callTypes[index]),
-                                  Icon(
+              ListView.separated(
+                // reverse: true,
+                shrinkWrap: true,
+                padding: EdgeInsets.only(top: height * 0.02),
+                itemBuilder: (context, index) => Container(
+                  margin: EdgeInsets.symmetric(horizontal: width * 0.02),
+                  padding: EdgeInsets.symmetric(
+                    // horizontal: width * 0.04,
+                    vertical: height * 0.015,
+                  ),
+                  // height: height * 0.08,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 0.1,
+                        blurRadius: 5,
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CircleAvatar(
+                        backgroundImage: AssetImage(ImageAssets.userProfile),
+                        radius: 25,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            expertNames[index],
+                            style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                          DefaultTextStyle(
+                            style: TextStyle(color: Colors.grey),
+                            child: Row(
+                              children: [
+                                Text(callTypes[index]),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: width * 0.02),
+                                  child: Icon(
                                     Icons.circle,
                                     color: Colors.grey,
+                                    size: 7,
                                   ),
-                                  Text(duration[index]),
-                                  Icon(Icons.circle, color: Colors.grey),
-                                  Text('₹${bill[index]}'),
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                        Spacer(),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text('Details'),
-                        ),
-                      ],
-                    ),
+                                ),
+                                Text(duration[index]),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: width * 0.02),
+                                  child: Icon(
+                                    Icons.circle,
+                                    color: Colors.grey,
+                                    size: 7,
+                                  ),
+                                ),
+                                Text('₹${bill[index]}'),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                      // Spacer(),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text('Details'),
+                      ),
+                    ],
                   ),
-                  separatorBuilder: (context, index) =>
-                      SizedBox(height: height * 0.02),
-                  itemCount: 3,
+                ),
+                separatorBuilder: (context, index) =>
+                    SizedBox(height: height * 0.02),
+                itemCount: 3,
+              ),
+
+              /// Component five ends here
+              ///
+              ///
+              ///
+              ///
+              ///
+              ///
+              /// Last (six) component starts here
+
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: width * 0.02, vertical: height * 0.02),
+                child: Text(
+                  'News and Updates',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
               ),
-              // SizedBox(height: height * 0.04),
+              Container(
+                padding: EdgeInsets.symmetric(
+                    horizontal: width * 0.03, vertical: height * 0.02),
+                margin: EdgeInsets.symmetric(horizontal: width * 0.03),
+
+                decoration: BoxDecoration(
+                  color: Color(0xffF6F6F6),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset(ImageAssets.triImage, width: width * 0.03),
+                        Padding(
+                          padding:  EdgeInsets.only(left:  width * 0.03),
+                          child: Text('Payment Cycle', style: Theme.of(context).textTheme.titleMedium),
+                        ),
+                        Spacer(),
+                        Text('Added on: ', style: TextStyle(color: Colors.grey),),
+                        Text('11 Oct`23'),
+                      ],
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.only(left:  width * 0.06,),
+                      child: Text(
+                        'There would be changes in the payment cycle, instead of weekly sending out payments, we would send out payments every 15 days, please fill out the following form if you have a problem with this decision',
+                      ),
+                    ),
+                    Divider(indent: 30),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
