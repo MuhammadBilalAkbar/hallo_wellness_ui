@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:hallo_wellness_ui/res/assets/image_assets.dart';
 import 'package:hallo_wellness_ui/res/colors/app_colors.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class UserHome extends StatefulWidget {
+  const UserHome({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<UserHome> createState() => _UserHomeState();
 }
 
 final moodCategories = [
@@ -30,7 +30,7 @@ final recentlyContacted = [
   'Dippak M.'
 ];
 
-class _HomeState extends State<Home> {
+class _UserHomeState extends State<UserHome> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -332,8 +332,9 @@ class _HomeState extends State<Home> {
                           children: [
                             Text(
                               'Upgrade to Plus\nPlan today',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w600, fontSize: 24),
+                              // style: TextStyle(
+                              //     fontWeight: FontWeight.w600, fontSize: 24),
+                              style: Theme.of(context).textTheme.headlineSmall,
                             ),
                             Text('Explore the experts with ease'),
                             ElevatedButton(
@@ -680,8 +681,9 @@ class _HomeState extends State<Home> {
                           children: [
                             Text(
                               'Talk to our AI Bot',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w600, fontSize: 24),
+                              // style: TextStyle(
+                              //     fontWeight: FontWeight.w600, fontSize: 24),
+                              style: Theme.of(context).textTheme.headlineSmall,
                             ),
                             Text('Explore the experts with ease'),
                             ElevatedButton(
@@ -725,7 +727,7 @@ class _HomeState extends State<Home> {
                     margin: EdgeInsets.symmetric(horizontal: width * 0.02),
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      borderRadius: BorderRadius.all(Radius.circular(15)),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.withOpacity(0.5),

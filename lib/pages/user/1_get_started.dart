@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hallo_wellness_ui/pages/user/2_home.dart';
+import 'package:hallo_wellness_ui/pages/user/2_user_home.dart';
 import '/res/assets/image_assets.dart';
 
 class GetStarted extends StatefulWidget {
@@ -68,7 +68,7 @@ class _GetStartedState extends State<GetStarted> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const Home(),
+                    builder: (context) => const UserHome(),
                   ),
                 );
               },
