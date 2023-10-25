@@ -500,7 +500,9 @@ class _AgentHomeState extends State<AgentHome> {
 
               Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: width * 0.02, vertical: height * 0.02),
+                    horizontal: width * 0.02, vertical: height * 0.015),
+                // margin: EdgeInsets.symmetric(
+                //     horizontal: width * 0.02, vertical: height * 0.02),
                 child: Text(
                   'News and Updates',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
@@ -509,7 +511,7 @@ class _AgentHomeState extends State<AgentHome> {
               Container(
                 padding: EdgeInsets.symmetric(
                     horizontal: width * 0.03, vertical: height * 0.02),
-                margin: EdgeInsets.symmetric(horizontal: width * 0.03),
+                margin: EdgeInsets.only(left: width * 0.03, right: width * 0.03, bottom: height * 0.025),
 
                 decoration: BoxDecoration(
                   color: Color(0xffF6F6F6),
@@ -535,7 +537,46 @@ class _AgentHomeState extends State<AgentHome> {
                         'There would be changes in the payment cycle, instead of weekly sending out payments, we would send out payments every 15 days, please fill out the following form if you have a problem with this decision',
                       ),
                     ),
-                    Divider(indent: 30),
+                    Divider(indent: 27),
+
+
+                    Row(
+                      children: [
+                        Image.asset(ImageAssets.triImage, width: width * 0.03),
+                        Padding(
+                          padding:  EdgeInsets.only(left:  width * 0.03),
+                          child: Text('User Report issues', style: Theme.of(context).textTheme.titleMedium),
+                        ),
+                        Spacer(),
+                        Text('Added on: ', style: TextStyle(color: Colors.grey),),
+                        Text('11 Oct`23'),
+                      ],
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.only(left:  width * 0.06,),
+                      child: Text(
+                        'There would be changes in the payment cycle, instead of weekly sending out payment.',
+                      ),
+                    ),
+                    Divider(indent: 27),
+                    Row(
+                      children: [
+                        Image.asset(ImageAssets.triImage, width: width * 0.03),
+                        Padding(
+                          padding:  EdgeInsets.only(left:  width * 0.03),
+                          child: Text('Provide your GST', style: Theme.of(context).textTheme.titleMedium),
+                        ),
+                        Spacer(),
+                        Text('Added on: ', style: TextStyle(color: Colors.grey),),
+                        Text('11 Oct`23'),
+                      ],
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.only(left:  width * 0.06),
+                      child: Text(
+                        'Please fill out the following form if you have a problem with this decision. Please fill out the following form if you have a problem with this decision.',
+                      ),
+                    ),
                   ],
                 ),
               ),
