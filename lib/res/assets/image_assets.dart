@@ -49,4 +49,5 @@ class ImageAssets {
   static const String iIcon = 'assets/images/agent/iIcon.png';
   static const String rupeeWalletIssue = 'assets/images/agent/rupeeWalletIssue.png';
   static const String triImage = 'assets/images/agent/triImage.png';
+  static const String doubleCircle = 'assets/images/agent/doubleCircle.png';
 }

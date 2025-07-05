@@ -227,7 +227,7 @@ class _UserHomeState extends State<UserHome> {
               Padding(
                 padding: EdgeInsets.only(left: width * 0.02),
                 child: SizedBox(
-                  height: height * 0.26,
+                  height: height * 0.28,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     separatorBuilder: (BuildContext context, int index) =>
@@ -574,7 +574,7 @@ class _UserHomeState extends State<UserHome> {
               /// Component 5 starts here
 
               Container(
-                height: height * 0.20,
+                height: height * 0.23,
                 color: AppColors.primaryAppColor,
                 width: double.infinity,
                 padding: EdgeInsets.only(left: width * 0.05),
@@ -591,7 +591,7 @@ class _UserHomeState extends State<UserHome> {
                       ),
                     ),
                     SizedBox(
-                      height: height * 0.15,
+                      height: height * 0.18,
                       child: ListView.separated(
                         separatorBuilder: (context, index) =>
                             SizedBox(width: width * 0.03),

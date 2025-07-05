@@ -361,8 +361,7 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                        margin: EdgeInsets.only(
-                                            top: height * 0.035),
+                                        margin: EdgeInsets.only(top: height * 0.035),
                                         height: height * 0.06,
                                         child: Column(
                                           mainAxisAlignment:
@@ -385,7 +384,7 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(left: width * 0.15),
+                                padding: EdgeInsets.only(left: width * 0.08),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -394,7 +393,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                             .textTheme
                                             .titleSmall),
                                     Padding(
-                                      padding:  EdgeInsets.only(top: height * 0.006),
+                                      padding:
+                                          EdgeInsets.only(top: height * 0.006),
                                       child: Row(
                                         children: [
                                           CircleAvatar(
@@ -402,7 +402,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                             backgroundColor: Color(0XFFEEEEFF),
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(50),
+                                                borderRadius:
+                                                    BorderRadius.circular(50),
                                                 color: Color(0XFFEEEEFF),
                                               ),
                                               child: Image.asset(
@@ -421,22 +422,24 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                           Text(
                                             '50/Min',
                                             style: TextStyle(
-                                                color: Colors.grey, fontSize: 15),
+                                                color: Colors.grey,
+                                                fontSize: 15),
                                           ),
                                         ],
                                       ),
                                     ),
                                     Padding(
-                                      padding:  EdgeInsets.only(top: height * 0.006),
+                                      padding:
+                                          EdgeInsets.only(top: height * 0.006),
                                       child: Row(
                                         children: [
-
                                           CircleAvatar(
                                             radius: 12,
                                             backgroundColor: Color(0XFFEEEEFF),
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(50),
+                                                borderRadius:
+                                                    BorderRadius.circular(50),
                                                 color: Color(0XFFEEEEFF),
                                               ),
                                               child: Image.asset(
@@ -455,13 +458,15 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                           Text(
                                             '40/Min',
                                             style: TextStyle(
-                                                color: Colors.grey, fontSize: 15),
+                                                color: Colors.grey,
+                                                fontSize: 15),
                                           ),
                                         ],
                                       ),
                                     ),
                                     Padding(
-                                      padding:  EdgeInsets.only(top: height * 0.006),
+                                      padding:
+                                          EdgeInsets.only(top: height * 0.006),
                                       child: Row(
                                         children: [
                                           CircleAvatar(
@@ -469,7 +474,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                             backgroundColor: Color(0XFFEEEEFF),
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(50),
+                                                borderRadius:
+                                                    BorderRadius.circular(50),
                                                 color: Color(0XFFEEEEFF),
                                               ),
                                               child: Image.asset(
@@ -488,7 +494,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                           Text(
                                             '20/Min',
                                             style: TextStyle(
-                                                color: Colors.grey, fontSize: 15),
+                                                color: Colors.grey,
+                                                fontSize: 15),
                                           ),
                                         ],
                                       ),
@@ -556,7 +563,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                         ),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Container(
                                               height: height * 0.075,
@@ -580,11 +588,15 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                                 children: [
                                                   CircleAvatar(
                                                     radius: 17,
-                                                    backgroundColor: Color(0XFFEEEEFF),
+                                                    backgroundColor:
+                                                        Color(0XFFEEEEFF),
                                                     child: Container(
                                                       decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(50),
-                                                        color: Color(0XFFEEEEFF),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(50),
+                                                        color:
+                                                            Color(0XFFEEEEFF),
                                                       ),
                                                       child: Image.asset(
                                                         ImageAssets.videoIcon,
@@ -594,7 +606,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                                     ),
                                                   ),
                                                   Padding(
-                                                    padding:  EdgeInsets.only(left: width * 0.02),
+                                                    padding: EdgeInsets.only(
+                                                        left: width * 0.02),
                                                     child: Text(
                                                       'Video Call',
                                                       style: TextStyle(
@@ -629,11 +642,15 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                                 children: [
                                                   CircleAvatar(
                                                     radius: 17,
-                                                    backgroundColor: Color(0XFFEEEEFF),
+                                                    backgroundColor:
+                                                        Color(0XFFEEEEFF),
                                                     child: Container(
                                                       decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(50),
-                                                        color: Color(0XFFEEEEFF),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(50),
+                                                        color:
+                                                            Color(0XFFEEEEFF),
                                                       ),
                                                       child: Image.asset(
                                                         ImageAssets.voiceIcon,
@@ -643,7 +660,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                                     ),
                                                   ),
                                                   Padding(
-                                                    padding:  EdgeInsets.only(left: width * 0.02),
+                                                    padding: EdgeInsets.only(
+                                                        left: width * 0.02),
                                                     child: Text(
                                                       'Voice Call',
                                                       style: TextStyle(
@@ -678,11 +696,15 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                                 children: [
                                                   CircleAvatar(
                                                     radius: 17,
-                                                    backgroundColor: Color(0XFFEEEEFF),
+                                                    backgroundColor:
+                                                        Color(0XFFEEEEFF),
                                                     child: Container(
                                                       decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(50),
-                                                        color: Color(0XFFEEEEFF),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(50),
+                                                        color:
+                                                            Color(0XFFEEEEFF),
                                                       ),
                                                       child: Image.asset(
                                                         ImageAssets.chatIcon,
@@ -692,7 +714,8 @@ class _AgentProfileUserState extends State<AgentProfileUser> {
                                                     ),
                                                   ),
                                                   Padding(
-                                                    padding:  EdgeInsets.only(left: width * 0.02),
+                                                    padding: EdgeInsets.only(
+                                                        left: width * 0.02),
                                                     child: Text(
                                                       'Chat',
                                                       style: TextStyle(
