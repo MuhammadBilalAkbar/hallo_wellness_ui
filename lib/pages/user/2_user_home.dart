@@ -751,7 +751,7 @@ class _UserHomeState extends State<UserHome> {
               SizedBox(
                 height: height * 0.35,
                 child: ListView.separated(
-                  padding: EdgeInsets.symmetric(vertical: width * 0.02),
+                  padding: EdgeInsets.only(top: width * 0.02, bottom: width * 0.05),
                   itemBuilder: (context, index) => Container(
                     margin: EdgeInsets.symmetric(horizontal: width * 0.02),
                     decoration: BoxDecoration(
