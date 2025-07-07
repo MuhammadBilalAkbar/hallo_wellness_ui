@@ -37,7 +37,7 @@ class _UserHomeState extends State<UserHome> {
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(top: height * 0.06),
+        padding: EdgeInsets.only(top: height * 0.05),
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -227,7 +227,7 @@ class _UserHomeState extends State<UserHome> {
               Padding(
                 padding: EdgeInsets.only(left: width * 0.02),
                 child: SizedBox(
-                  height: height * 0.28,
+                  height: height * 0.35,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     separatorBuilder: (BuildContext context, int index) =>
@@ -247,7 +247,7 @@ class _UserHomeState extends State<UserHome> {
                           Container(
                             margin: EdgeInsets.only(
                                 right: width * 0.19, top: height * 0.01),
-                            height: 25,
+                            height: 20,
                             width: 50,
                             decoration: BoxDecoration(
                               color: Color(0xff3a3a3a),
@@ -307,7 +307,7 @@ class _UserHomeState extends State<UserHome> {
                 padding: EdgeInsets.symmetric(horizontal: width * 0.02),
                 child: Container(
                   width: double.infinity,
-                  height: height * 0.2,
+                  height: height * 0.25,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
@@ -406,15 +406,19 @@ class _UserHomeState extends State<UserHome> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(ImageAssets.anxiety,
-                                    width: width * 0.08),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5.0),
-                                  child: Text(
-                                    'Anxiety',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 15,
+                                Expanded(
+                                  child: Image.asset(ImageAssets.anxiety,
+                                      width: width * 0.08),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 5.0),
+                                    child: Text(
+                                      'Anxiety',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -432,15 +436,19 @@ class _UserHomeState extends State<UserHome> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(ImageAssets.stress,
-                                    width: width * 0.08),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5.0),
-                                  child: Text(
-                                    'Stress',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 15,
+                                Expanded(
+                                  child: Image.asset(ImageAssets.stress,
+                                      width: width * 0.08),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 5.0),
+                                    child: Text(
+                                      'Stress',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -462,15 +470,19 @@ class _UserHomeState extends State<UserHome> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(ImageAssets.sleep,
-                                    width: width * 0.08),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5.0),
-                                  child: Text(
-                                    'Sleep',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 15,
+                                Expanded(
+                                  child: Image.asset(ImageAssets.sleep,
+                                      width: width * 0.08),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 5.0),
+                                    child: Text(
+                                      'Sleep',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -488,15 +500,19 @@ class _UserHomeState extends State<UserHome> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(ImageAssets.anger,
-                                    width: width * 0.08),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5.0),
-                                  child: Text(
-                                    'Anger',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 15,
+                                Expanded(
+                                  child: Image.asset(ImageAssets.anger,
+                                      width: width * 0.08),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 5.0),
+                                    child: Text(
+                                      'Anger',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -518,15 +534,19 @@ class _UserHomeState extends State<UserHome> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(ImageAssets.overthinking,
-                                    width: width * 0.08),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5.0),
-                                  child: Text(
-                                    'Overthinking',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 15,
+                                Expanded(
+                                  child: Image.asset(ImageAssets.overthinking,
+                                      width: width * 0.08),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 5.0),
+                                    child: Text(
+                                      'Overthinking',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -544,15 +564,19 @@ class _UserHomeState extends State<UserHome> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(ImageAssets.loneliness,
-                                    width: width * 0.08),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5.0),
-                                  child: Text(
-                                    'Loneliness',
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 15,
+                                Expanded(
+                                  child: Image.asset(ImageAssets.loneliness,
+                                      width: width * 0.08),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 5.0),
+                                    child: Text(
+                                      'Loneliness',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -574,7 +598,7 @@ class _UserHomeState extends State<UserHome> {
               /// Component 5 starts here
 
               Container(
-                height: height * 0.23,
+                height: height * 0.25,
                 color: AppColors.primaryAppColor,
                 width: double.infinity,
                 padding: EdgeInsets.only(left: width * 0.05),
@@ -582,16 +606,19 @@ class _UserHomeState extends State<UserHome> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Recently Contacted',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.whiteColor,
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        'Recently Contacted',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          color: AppColors.whiteColor,
+                        ),
                       ),
                     ),
-                    SizedBox(
-                      height: height * 0.18,
+                    Expanded(
+                      flex: 5,
                       child: ListView.separated(
                         separatorBuilder: (context, index) =>
                             SizedBox(width: width * 0.03),
@@ -652,53 +679,55 @@ class _UserHomeState extends State<UserHome> {
               ///
               /// Component 6 starts here
 
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * 0.05),
-                child: Container(
-                  width: double.infinity,
-                  height: height * 0.13,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        Color(0xffaafbe3),
-                        Color(0xffcaf4c6),
-                        Color(0xffd8e9c0),
-                        Color(0xffe6dfbc),
-                        Color(0xffdde4be),
-                      ],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
+              Flexible(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: width * 0.02),
+                  child: Container(
+                    width: double.infinity,
+                    height: height * 0.17,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          Color(0xffaafbe3),
+                          Color(0xffcaf4c6),
+                          Color(0xffd8e9c0),
+                          Color(0xffe6dfbc),
+                          Color(0xffdde4be),
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(left: width * 0.05),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Talk to our AI Bot',
-                              // style: TextStyle(
-                              //     fontWeight: FontWeight.w600, fontSize: 24),
-                              style: Theme.of(context).textTheme.headlineSmall,
-                            ),
-                            Text('Explore the experts with ease'),
-                            ElevatedButton(
-                              onPressed: () {},
-                              child: Text('Talk Now'),
-                            ),
-                          ],
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: width * 0.05),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Talk to our AI Bot',
+                                // style: TextStyle(
+                                //     fontWeight: FontWeight.w600, fontSize: 24),
+                                style: Theme.of(context).textTheme.headlineSmall,
+                              ),
+                              Text('Explore the experts with ease'),
+                              ElevatedButton(
+                                onPressed: () {},
+                                child: Text('Talk Now'),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Spacer(),
-                      Image.asset(
-                        ImageAssets.aiBot,
-                        height: height * 0.12,
-                      ),
-                    ],
+                        Spacer(),
+                        Image.asset(
+                          ImageAssets.aiBot,
+                          height: height * 0.12,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -713,16 +742,16 @@ class _UserHomeState extends State<UserHome> {
               /// Component 7 starts here
 
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * 0.02),
+                padding: EdgeInsets.symmetric(horizontal: width * 0.03),
                 child: Text(
                   'Top Rated Listeners/Experts',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
               ),
               SizedBox(
-                height: height * 0.3,
+                height: height * 0.35,
                 child: ListView.separated(
-                  reverse: true,
+                  padding: EdgeInsets.symmetric(vertical: width * 0.02),
                   itemBuilder: (context, index) => Container(
                     margin: EdgeInsets.symmetric(horizontal: width * 0.02),
                     decoration: BoxDecoration(
@@ -730,7 +759,7 @@ class _UserHomeState extends State<UserHome> {
                       borderRadius: BorderRadius.all(Radius.circular(15)),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.grey.withOpacity(0.5),
+                          color: Colors.grey.withAlpha((0.5 * 255).toInt()),
                           spreadRadius: 5,
                           blurRadius: 7,
                           offset: Offset(0, 3), // changes position of shadow
@@ -742,12 +771,12 @@ class _UserHomeState extends State<UserHome> {
                         children: [
                           CircleAvatar(
                             backgroundImage:
-                                AssetImage(ImageAssets.userProfile),
-                            radius: 50,
+                            AssetImage(ImageAssets.userProfile),
+                            radius: 30,
                           ),
                           Positioned(
                             top: 36,
-                            left: 30,
+                            left: 11,
                             child: Container(
                               height: 20,
                               width: 40,
@@ -778,8 +807,8 @@ class _UserHomeState extends State<UserHome> {
                       title: Text(expertNames[index]),
                       subtitle: Text(expertise[index]),
                       trailing: SizedBox(
-                        width: width * 0.15,
-                        height: height * 0.03,
+                        width: width * 0.18,
+                        height: height * 0.038,
                         child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
@@ -804,7 +833,6 @@ class _UserHomeState extends State<UserHome> {
                   itemCount: 3,
                 ),
               ),
-              SizedBox(height: height * 0.04)
             ],
           ),
         ),
